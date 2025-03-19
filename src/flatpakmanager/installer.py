@@ -1,8 +1,8 @@
 import curses
 import time
 import pexpect
-from utils import strip_ansi_codes, confirm_action
-from commands import search_flatpak_packages
+from .utils import strip_ansi_codes, confirm_action
+from .commands import search_flatpak_packages
 
 def run_install_command(stdscr, app_id: str, package_name: str) -> None:
     """

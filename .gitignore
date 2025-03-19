@@ -19,6 +19,8 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+deb_dist/*
+!deb_dist/*.deb
 
 # Virtual environment
 env/

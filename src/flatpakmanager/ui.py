@@ -1,10 +1,10 @@
 import curses
 import time
 import signal
-from commands import get_installed_flatpaks, get_running_flatpaks, run_flatpak, stop_flatpak, get_flatpak_description
-from utils import confirm_action
-from installer import install_package_mode
-from uninstaller import uninstall_package_mode
+from .commands import get_installed_flatpaks, get_running_flatpaks, run_flatpak, stop_flatpak, get_flatpak_description
+from .utils import confirm_action
+from .installer import install_package_mode
+from .uninstaller import uninstall_package_mode
 
 # A flag to indicate whether an exit has been requested.
 exit_requested = False

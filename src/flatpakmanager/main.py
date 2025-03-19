@@ -2,7 +2,7 @@
 import sys
 import argparse
 import curses
-from ui import main_loop
+from .ui import main_loop
 
 man_page_text = """
 FLATPAK MANAGER(1)                             User Commands                            FLATPAK MANAGER(1)

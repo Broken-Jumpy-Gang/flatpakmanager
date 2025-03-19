@@ -1,7 +1,7 @@
 import curses
 import pexpect
-from utils import strip_ansi_codes, confirm_action
-from commands import get_installed_flatpaks
+from .utils import strip_ansi_codes, confirm_action
+from .commands import get_installed_flatpaks
 
 def run_uninstall_command(stdscr, app_id: str, package_name: str) -> None:
     """
