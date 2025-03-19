@@ -21,6 +21,7 @@ var/
 *.egg
 deb_dist/*
 !deb_dist/*.deb
+flatpak_manager-*.tar.gz
 
 # Virtual environment
 env/
