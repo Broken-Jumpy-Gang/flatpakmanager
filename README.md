@@ -19,6 +19,34 @@
 
 ## Installation
 
+### Using the Pre-Built Debian Package
+
+1. **Download the Release**:  
+   Navigate to the [GitHub Releases page](https://github.com/<yourusername>/flatpak-manager/releases) and download the latest `.deb` file (e.g. `flatpak-manager_0.1.0-1_all.deb`).
+
+2. **Install the Package**:  
+   Open your terminal, navigate to the directory where you downloaded the file, and run:
+   ```bash
+   sudo dpkg -i flatpak-manager_0.1.0-1_all.deb
+   ```
+   If you encounter any dependency issues, run:
+   ```bash
+   sudo apt-get install -f
+   ```
+
+3. **Run the Application**:  
+   Once installed, you can launch the application by simply running:
+   ```bash
+   flatpak-manager
+   ```
+   or by calling:
+   ```bash
+   python3 /usr/bin/flatpak-manager
+   ```
+   depending on how your environment is set up.
+
+### Installing from Source
+
 1. **Clone the Repository**:  
    Open your terminal and run:
    ```bash
@@ -33,30 +61,26 @@
    ```
 
 3. **Install Dependencies**:  
-   You can install the required dependencies using:
+   If you have a `requirements.txt` file, run:
    ```bash
    pip install -r requirements.txt
    ```
-   Alternatively, if you do not have a `requirements.txt` file, install `pexpect` manually:
+   Otherwise, install `pexpect` manually:
    ```bash
    pip install pexpect
    ```
 
-## Usage
+4. **Run the Application**:  
+   Launch the application by executing:
+   ```bash
+   ./main.py
+   ```
+   or:
+   ```bash
+   python3 main.py
+   ```
 
-To launch Flatpak Manager, execute:
-
-```bash
-./main.py
-```
-
-Alternatively, run it with Python directly:
-
-```bash
-python3 main.py
-```
-
-### Command Line Options
+## Command Line Options
 
 - `--manpage`: Display the man page (help documentation) and exit.
   ```bash
