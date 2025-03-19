@@ -40,7 +40,7 @@ AUTHOR
        Written by your team.
 
 REPORTING BUGS
-       Report bugs to <your-support@example.com>.
+       Report bugs to dev@bissbert.ch.
 """
 
 def main_cli():

@@ -6,7 +6,7 @@ if not hasattr(configparser, 'SafeConfigParser'):
 
 setup(
     name="flatpak-manager",
-    version="0.1.0",
+    version="0.1.1",
     description="A tool for managing flatpak applications",
     long_description="A TUI for managing flatpak applications from within a terminal",
     packages=find_packages('src'),
